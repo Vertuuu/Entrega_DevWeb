@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Steam - Pagamento</title>
+        <link rel="stylesheet" href="css/pagamento.css">
+    </head>
+    <body>
+        <header>
+            <img src="img/steam-logo.png" alt="logo da steam" class="logo">
+            <div class="user-info">
+                <img src="img/user-icon.png" alt="ícone do usuário" class="header-icon">
+                <h2>Usuário</h2>
+            </div>
+        </header>
+        <main>
+            <section id="modal-pagamento">
+                <h2>Finalização de Carrinho</h2>
+                <select id="opções-pagamento">
+                    <option value="" disabled selected>Selecione uma forma de pagamento</option>
+                    <option value="Pix">Pix</option>
+                    <option value="Cartão de Crédito">Cartão de Crédito</option>
+                    <option value="Boleto">Boleto</option>
+                    <option value="PayPal">PayPal</option>
+                    <option value="Steam Wallet">Steam Wallet</option>
+                </select>
+                <div id="detalhes-carrinho">
+                    <h3>Itens no Carrinho: </h3>
+                    <div id="lista-itens-carrinho">
+                        <div class="item-carrinho">
+                            <p>Nome Jogo 1</p>
+                            <p>R$ 49,99</p>
+                            <img src="img/game1.jpg" alt="Jogo 1">
+                        </div>
+                        <div class="item-carrinho">
+                            <p>Nome Jogo 2</p>
+                            <p>R$ 49,99</p>
+                            <img src="img/game2.jpg" alt="Jogo 2">
+                        </div>
+                        <div class="item-carrinho">
+                            <p>Nome Jogo 3</p>
+                            <p>R$ 49,99</p>
+                            <img src="img/game3.jpg" alt="Jogo 3">
+                        </div>
+                    </div>
+                    <form id="form-pagamento">
+                        <input type="checkbox" id="termos-condicoes" required>
+                        <label for="termos-condicoes">Li e concordo com os <a href="https://google.com">termos e condições</a></label>
+                        <button id="finalizar-pagamento" type="submit">Finalizar Compra</button>
+                    </form>
+                    <a href="html/carrinho.html">Voltar ao Carrinho</a>
+                </div>
+        </main>
+        <footer>
+            <p>Trabalho baseado no aplicativo de jogos eletrônicos Steam.</p>
+        </footer>
+    </body>
+</html>
