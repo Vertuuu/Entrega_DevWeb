@@ -1,0 +1,102 @@
+
+body {
+    background-color: #171a21; 
+    color: #c7d5e0; 
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 700px;
+    margin: 40px auto 0 auto;
+    padding: 32px;
+}
+
+.breadcrumb {
+    color: #c7d5e0; 
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.breadcrumb-active {
+    color: #66c0f4; 
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: 700;
+    margin: 0 0 24px 0;
+    color: #ffffff;
+    font-family: 'Georgia', serif;
+}
+
+.cart-box {
+    background: #1b2838; 
+    border-radius: 3px;
+    padding: 24px 18px 18px 18px;
+    margin-bottom: 24px;
+}
+
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cart-table th, .cart-table td {
+    padding: 8px 0;
+    text-align: left;
+}
+
+.cart-table th {
+    color: #c7d5e0; 
+}
+
+.cart-table .item-row td {
+    padding: 12px 0;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.total-section {
+    margin-bottom: 24px;
+    overflow: hidden; 
+}
+
+.total-label {
+    font-size: 1.1em;
+    color: #c7d5e0; 
+    float: left;
+}
+
+.total-price {
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #ffffff;
+    float: right;
+}
+
+.button-group {
+    text-align: left;
+}
+
+.btn {
+    color: #ffffff;
+    border: none;
+    border-radius: 3px;
+    padding: 12px 32px;
+    font-size: 1em;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background: #66c0f4; 
+    color: #171a21; 
+}
+
+.btn-secondary {
+    background: #2a475e; 
+    color: #c7d5e0; 
+    margin-left: 12px;
+}

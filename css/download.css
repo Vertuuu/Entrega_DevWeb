@@ -1,0 +1,54 @@
+
+body {
+    background-color: #1b2838; 
+    font-family: Arial, sans-serif;
+    color: #c7d5e0; 
+    margin: 0;
+    padding: 0;
+}
+
+.download-container {
+    width: 600px;
+    margin: 80px auto;
+    text-align: center;
+    padding: 40px;
+}
+
+.steam-logo {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: #66c0f4; 
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.download-btn {
+    background-color: #66c0f4; 
+    color: #171a21; 
+    padding: 15px 40px;
+    font-size: 1.5em;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    display: inline-block; 
+    margin-bottom: 30px;
+}
+
+.info a {
+    color: #66c0f4; 
+    text-decoration: none;
+}
+
+.info a:hover {
+    text-decoration: underline;
+}

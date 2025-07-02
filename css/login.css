@@ -1,0 +1,80 @@
+
+body {
+    background-color: #171a21; 
+    font-family: Arial, sans-serif;
+    color: #c7d5e0; 
+    margin: 0;
+    padding: 0;
+}
+
+.login-container {
+    background-color: #1b2838; 
+    width: 350px;
+    margin: 100px auto;
+    padding: 40px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.steam-logo {
+    width: 180px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+fieldset {
+    border: 1px solid #2a475e; 
+    padding: 20px;
+    margin-bottom: 20px;
+    color: #c7d5e0; 
+    border-radius: 3px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 90%;
+    padding: 12px;
+    margin-bottom: 15px;
+    background-color: #2a475e;
+    border: 1px solid #171a21; 
+    color: #ffffff;
+    font-size: 14px;
+    border-radius: 3px;
+}
+
+input::placeholder {
+    color: #c7d5e0; 
+}
+
+button[type="submit"] {
+    background-color: #66c0f4; 
+    color: #171a21; 
+    border: none;
+    padding: 12px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 3px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.login-footer p {
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.login-footer a {
+    color: #66c0f4; 
+    text-decoration: none;
+}
+
+.login-footer a:hover {
+    text-decoration: underline;
+}

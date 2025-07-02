@@ -17,7 +17,7 @@
         <main>
             <section id="modal-pagamento">
                 <h2>Finalização de Carrinho</h2>
-                <select id="opções-pagamento">
+                <select name="opt-pagamento" id="opções-pagamento">
                     <option value="" disabled selected>Selecione uma forma de pagamento</option>
                     <option value="Pix">Pix</option>
                     <option value="Cartão de Crédito">Cartão de Crédito</option>
@@ -31,25 +31,25 @@
                         <div class="item-carrinho">
                             <p>Nome Jogo 1</p>
                             <p>R$ 49,99</p>
-                            <img src="https://www.ninjarefinery.com/wp-content/uploads/2021/06/Cyberpunk-2077-banner.jpg" alt="Jogo 1">
+                            <img src="../img/jogo.png" alt="Jogo 1">
                         </div>
                         <div class="item-carrinho">
                             <p>Nome Jogo 2</p>
                             <p>R$ 49,99</p>
-                            <img src="https://www.ninjarefinery.com/wp-content/uploads/2021/06/Cyberpunk-2077-banner.jpg" alt="Jogo 2">
+                            <img src="../img/jogo.png" alt="Jogo 2">
                         </div>
                         <div class="item-carrinho">
                             <p>Nome Jogo 3</p>
                             <p>R$ 49,99</p>
-                            <img src="https://www.ninjarefinery.com/wp-content/uploads/2021/06/Cyberpunk-2077-banner.jpg" alt="Jogo 3">
+                            <img src="../img/jogo.png" alt="Jogo 3">
                         </div>
                     </div>
-                    <form id="form-pagamento">
+                    <form id="form-pagamento" action="catal" method="post">
                         <input type="checkbox" id="termos-condicoes" required>
                         <label for="termos-condicoes">Li e concordo com os <a href="https://google.com">termos e condições</a></label>
                         <button id="finalizar-pagamento" type="submit">Finalizar Compra</button>
                     </form>
-                    <a href="html/carrinho.html">Voltar ao Carrinho</a>
+                    <a href="html/carrinho.html" id="voltar-carrinho">Voltar ao Carrinho</a>
                 </div>
         </main>
         <footer>
