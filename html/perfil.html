@@ -4,68 +4,79 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Steam - Perfil</title>
-        <link rel="stylesheet" href="css/perfil.css">
+        <link rel="stylesheet" href="../css/perfil.css">
     </head>
     <body>
         <header>
-            <img src="img/steam-logo.png" alt="logo da steam" class="logo">
+            <img src="https://community.cloudflare.steamstatic.com/public/shared/images/header/globalheader_logo.png" alt="logo da steam" class="logo">
             <div class="user-info">
-                <img src="img/user-icon.png" alt="ícone do usuário" class="header-icon">
+                <img src="https://icon-library.com/images/user-icon-png/user-icon-png-20.jpg" alt="ícone do usuário" class="header-icon">
                 <h2>Usuário</h2>
             </div>
         </header>
         <nav class="menu">
             <ul>
-                <li><a href="html/download.html">Download</a></li>
-                <li><a href="html/catalogo.html">Catálogo</a></li>
-                <li><a href="html/sobre.html">Sobre</a></li>
+                <li><a href="download.html">Download</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
             </ul>
         </nav>
-        <section id="perfil-info-basica">
-            <img src="img/user-icon.png" alt="ícone do usuário" class="perfil-icon">
-            <div class="perfil-info">
-                <h2>@Username</h2>
-                <h3>Nome Completo</h3>
-            </div>
-        </section>
-        <section id="perfil-atividades">
-            <h2>Atividades Recentes</h2>
-            <div id="lista-de-jogos">
-                <div id="jogo-1" class="jogo">
-                    <h3>Nome Jogo 1</h3>
-                    <img src="img/game1.jpg" alt="Jogo 1">
+        <div id="conteudo">
+            <section class="perfil-atividades-e-info">
+                <section id="perfil-info-basica">
+                    <img src="https://icon-library.com/images/user-icon-png/user-icon-png-20.jpg" alt="ícone do usuário" class="perfil-icon">
+                    <div class="perfil-info">
+                        <h2>@Username</h2>
+                        <h3>Nome Completo</h3>
+                    </div>
+                </section>
+                <section id="perfil-atividades">
+                    <h2>Atividades Recentes</h2>
+                    <div id="lista-de-jogos">
+                        <div id="jogo-1" class="jogo">
+                            <h3>Nome Jogo 1</h3>
+                            <a href="jogo.html">
+                                <img src="https://www.ninjarefinery.com/wp-content/uploads/2021/06/Cyberpunk-2077-banner.jpg" alt="Jogo 1">
+                            </a>
+                        </div>
+                        <div id="jogo-2" class="jogo">
+                            <h3>Nome Jogo 2</h3>
+                            <a href="jogo.html">
+                                <img src="https://www.ninjarefinery.com/wp-content/uploads/2021/06/Cyberpunk-2077-banner.jpg" alt="Jogo 2">
+                            </a>
+                        </div>
+                        <div id="jogo-3" class="jogo">
+                            <h3>Nome Jogo 3</h3>
+                            <a href="jogo.html">
+                                <img src="https://www.ninjarefinery.com/wp-content/uploads/2021/06/Cyberpunk-2077-banner.jpg" alt="Jogo 3">
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </section>
+            
+            <section id="perfil-amigos">
+                <h2>Lista de Amigos</h2>
+                <div id="lista-de-amigos">
+                    <div class="amigo">
+                        <img src="https://icon-library.com/images/user-icon-png/user-icon-png-20.jpg" alt="Icon do Amigo 1" class="amigo-icon">
+                        <h3>@Usuário 1</h3>
+                    </div>
+                    <div class="amigo">
+                        <img src="https://icon-library.com/images/user-icon-png/user-icon-png-20.jpg" alt="Icon do Amigo 2" class="amigo-icon">
+                        <h3>@Usuário 2</h3>
+                    </div>
+                    <div class="amigo">
+                        <img src="https://icon-library.com/images/user-icon-png/user-icon-png-20.jpg" alt="Icon do Amigo 3" class="amigo-icon">
+                        <h3>@Usuário 3</h3>
+                    </div>
+                    <div class="amigo">
+                        <img src="https://icon-library.com/images/user-icon-png/user-icon-png-20.jpg" alt="Icon do Amigo 4" class="amigo-icon">
+                        <h3>@Usuário 4</h3>
+                    </div>
                 </div>
-                <div id="jogo-2" class="jogo">
-                    <h3>Nome Jogo 2</h3>
-                    <img src="img/game2.jpg" alt="Jogo 2">
-                </div>
-                <div id="jogo-3" class="jogo">
-                    <h3>Nome Jogo 3</h3>
-                    <img src="img/game3.jpg" alt="Jogo 3">
-                </div>
-            </div>
-        </section>
-        <section id="perfil-amigos">
-            <h2>Lista de Amigos</h2>
-            <div id="lista-de-amigos">
-                <div class="amigo">
-                    <img src="img/friend1.jpg" alt="Icon do Amigo 1" class="amigo-icon">
-                    <h3>@Usuário 1</h3>
-                </div>
-                <div class="amigo">
-                    <img src="img/friend2.jpg" alt="Icon do Amigo 2" class="amigo-icon">
-                    <h3>@Usuário 2</h3>
-                </div>
-                <div class="amigo">
-                    <img src="img/friend3.jpg" alt="Icon do Amigo 3" class="amigo-icon">
-                    <h3>@Usuário 3</h3>
-                </div>
-                <div class="amigo">
-                    <img src="img/friend4.jpg" alt="Icon do Amigo 4" class="amigo-icon">
-                    <h3>@Usuário 4</h3>
-                </div>
-            </div>
-        </section>
+            </section>
+        </div>
         <footer>
             <p>Trabalho baseado no aplicativo de jogos eletrônicos Steam.</p>
         </footer>

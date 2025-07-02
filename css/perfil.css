@@ -1,0 +1,117 @@
+header, footer {
+    background-color: #171a21;
+    margin: 0px;
+}
+/* Não sei como alterar a apresentação do header para ficar com os dois elementos nas extremidades sem uso do display flex*/
+header {
+    color: #fff;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.header-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: inline;
+}
+.user-info h2 {
+    display: inline;
+}
+footer {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.user-info {
+    width: 200px;
+}
+body {
+    color: #fff;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    background-color: #2a475e;
+}
+nav.menu {
+    width: 100%;
+    margin: 0px;
+    padding: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+    text-align: center;
+    background-color: #1b2838;
+}
+nav.menu ul li {
+    display: inline;
+    font-size: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+nav.menu ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+/* Novamente não sei como colocar dois elementos nas extremidades sem uso do display flex*/
+#conteudo {
+    display: flex;
+    justify-content: space-between;
+}
+section.perfil-atividades-e-info {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 55%;
+}
+section#perfil-info-basica {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+.perfil-icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: inline;
+}
+
+section#perfil-atividades {
+    background-color: #1b2838;
+    width: 75%;
+    padding-top: 20px;
+    margin: 0 auto;
+    border-radius: 20px;
+    text-align: center;
+}
+.jogo img {
+    width: 80%;
+    border-radius: 10px;
+}
+section#perfil-amigos {
+    width: 45%;
+    text-align: center;
+}
+div#lista-de-amigos {
+    margin: 0 auto;
+    width: 60%;
+    height: 80%;
+    border-radius: 20px;
+    background-color: #1b2838;
+}
+.amigo-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: inline;
+}
+.amigo h3 {
+    display: inline;
+}
+.amigo {
+    padding-top: 50px;
+}
+

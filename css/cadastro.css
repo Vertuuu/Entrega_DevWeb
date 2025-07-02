@@ -1,0 +1,66 @@
+header, footer {
+    background-color: #171a21;
+    padding: 20px;
+}
+footer {
+    text-align: center;
+    color: #fff;
+}
+body, main {
+    font-family: Arial, sans-serif;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    background-color: #2a475e;
+}
+
+section.form-section {
+    color: #fff;
+    text-align: center;
+    width: 40%;
+    height: 500px;
+    margin: 0 auto;
+    background-color:  #1b2838;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0px 0px 20px black;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+form#cadastroForm {
+    width: 75%;
+    margin: 0 auto;
+}
+.form-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+.item-formulario {
+    width: 100%;
+    margin-bottom: 15px;
+}
+.item-formulario label {
+    font-size: 18px;
+}
+.item-formulario input {
+    width: 75%;
+    height: 15px;
+    padding: 10px;
+}
+
+button#cadastrar {
+    width: 200px;
+    height: 50px;
+    border-radius: 50px;
+    box-shadow: 0px 0px 10px #ffffff;
+    background-color: #c7d5e0;
+    padding: 10px;
+    margin-top: 10px;
+}
+a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 16px;
+    font-weight: bold;
+}

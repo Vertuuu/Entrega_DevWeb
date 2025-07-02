@@ -1,0 +1,100 @@
+header, footer {
+    background-color: #171a21;
+    margin: 0px;
+}
+/* Não sei como alterar a apresentação do header para ficar com os dois elementos nas extremidades sem uso do display flex*/
+header {
+    color: #fff;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.header-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: inline;
+}
+.user-info h2 {
+    display: inline;
+}
+footer {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.user-info {
+    width: 200px;
+}
+body {
+    color: #fff;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    background-color: #2a475e;
+}
+#modal-pagamento {
+    width: 40%;
+    text-align: center;
+    margin: 0 auto;
+    background-color:  #1b2838;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    box-shadow: 0px 0px 20px black;
+}
+#modal-pagamento h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+#opções-pagamento {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 50%;
+    height: 25px;
+    font-size: 18px;
+}
+#detalhes-carrinho {
+    width: 50%;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 0 auto;
+    background-color: #293a50;
+}
+.item-carrinho img{
+    width: 80%;
+    border-radius: 20px;
+}
+.item-carrinho p {
+    display: inline;
+    font-size: 16px;
+    margin: 25px;
+}
+#termos-condicoes {
+    margin: 20px;
+}
+
+button#finalizar-pagamento {
+    width: 200px;
+    height: 50px;
+    border-radius: 50px;
+    box-shadow: 0px 0px 10px #ffffff;
+    background-color: #c7d5e0;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+a {
+    color: #fff;
+    text-decoration: none;
+}
+a:hover {
+    color: #c7d5e0;
+    text-shadow: 0px 0px 10px #ffffff;
+}
