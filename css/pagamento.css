@@ -68,6 +68,7 @@ body {
     background-color: #293a50;
 }
 .item-carrinho img{
+    height: 100px;
     width: 80%;
     border-radius: 20px;
 }

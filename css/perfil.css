@@ -2,20 +2,36 @@ header, footer {
     background-color: #171a21;
     margin: 0px;
 }
-/* Não sei como alterar a apresentação do header para ficar com os dois elementos nas extremidades sem uso do display flex*/
 header {
+    position: relative;
+    padding-left: 160px;
+    padding-right: 160px; 
+    height: 80px;
+}
+
+#header-imagem {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.user-info h2 {
+    display: inline;
+    margin-left: 10px;
+    font-size: 24px;
     color: #fff;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+}
+.user-info {
+    padding: 2%;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
 }
 .header-icon {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    display: inline;
-}
-.user-info h2 {
     display: inline;
 }
 footer {
@@ -25,9 +41,7 @@ footer {
     padding: 20px;
     padding-left: 0px;
     padding-right: 0px;
-}
-.user-info {
-    width: 200px;
+    margin-top: 50px;
 }
 body {
     color: #fff;
@@ -41,6 +55,7 @@ body {
 nav.menu {
     width: 100%;
     margin: 0px;
+    margin-bottom: 50px;
     padding: 10px;
     padding-left: 0px;
     padding-right: 0px;
@@ -57,17 +72,27 @@ nav.menu ul li a {
     color: #fff;
     text-decoration: none;
 }
-/* Novamente não sei como colocar dois elementos nas extremidades sem uso do display flex*/
 #conteudo {
-    display: flex;
-    justify-content: space-between;
+    text-align: center;
 }
-section.perfil-atividades-e-info {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    width: 55%;
+
+.perfil-atividades-e-info,
+#perfil-amigos {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0px;
 }
-section#perfil-info-basica {
+div.perfil-atividades-e-info {
+    width: 45%;
+    min-width: 700px;
+}
+div#perfil-amigos {
+    margin-left: 50px;
+    width: 20%;
+    min-width: 500px;
+}
+
+div#perfil-info-basica {
     width: 100%;
     margin: 0 auto;
     text-align: center;
@@ -79,9 +104,9 @@ section#perfil-info-basica {
     display: inline;
 }
 
-section#perfil-atividades {
+div#perfil-atividades {
     background-color: #1b2838;
-    width: 75%;
+    width: 100%;
     padding-top: 20px;
     margin: 0 auto;
     border-radius: 20px;
@@ -89,18 +114,18 @@ section#perfil-atividades {
 }
 .jogo img {
     width: 80%;
+    max-height: 200px;
+    min-height: 100px;
     border-radius: 10px;
 }
-section#perfil-amigos {
-    width: 45%;
-    text-align: center;
-}
+
+
 div#lista-de-amigos {
     margin: 0 auto;
-    width: 60%;
-    height: 80%;
+    width: 100%;
     border-radius: 20px;
     background-color: #1b2838;
+    padding-bottom: 200px;
 }
 .amigo-icon {
     width: 50px;

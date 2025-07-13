@@ -8,48 +8,50 @@
     </head>
     <body>
         <header>
-            <img src="https://community.cloudflare.steamstatic.com/public/shared/images/header/globalheader_logo.png" alt="logo da steam" class="logo">
+            <div id="header-imagem">
+                <img src="https://community.cloudflare.steamstatic.com/public/shared/images/header/globalheader_logo.png" alt="logo da steam" class="logo">
+            </div>
             <div class="user-info">
-                <img src="https://icon-library.com/images/user-icon-png/user-icon-png-20.jpg" alt="ícone do usuário" class="header-icon">
-                <h2>Usuário</h2>
+                <img src="../img/briar.jpg" alt="ícone do usuário" class="header-icon">
+                <h2>User123131</h2>
             </div>
         </header>
         <main>
             <section id="modal-pagamento">
                 <h2>Finalização de Carrinho</h2>
-                <select name="opt-pagamento" id="opções-pagamento">
-                    <option value="" disabled selected>Selecione uma forma de pagamento</option>
-                    <option value="Pix">Pix</option>
-                    <option value="Cartão de Crédito">Cartão de Crédito</option>
-                    <option value="Boleto">Boleto</option>
-                    <option value="PayPal">PayPal</option>
-                    <option value="Steam Wallet">Steam Wallet</option>
-                </select>
-                <div id="detalhes-carrinho">
-                    <h3>Itens no Carrinho: </h3>
-                    <div id="lista-itens-carrinho">
-                        <div class="item-carrinho">
-                            <p>Nome Jogo 1</p>
-                            <p>R$ 49,99</p>
-                            <img src="../img/jogo.png" alt="Jogo 1">
-                        </div>
-                        <div class="item-carrinho">
-                            <p>Nome Jogo 2</p>
-                            <p>R$ 49,99</p>
-                            <img src="../img/jogo.png" alt="Jogo 2">
-                        </div>
-                        <div class="item-carrinho">
-                            <p>Nome Jogo 3</p>
-                            <p>R$ 49,99</p>
-                            <img src="../img/jogo.png" alt="Jogo 3">
+                <form id="form-pagamento" action="../html/biblioteca.html" method="post">
+                    <select name="opt-pagamento" id="opções-pagamento" required>
+                        <option value="" disabled selected>Selecione uma forma de pagamento</option>
+                        <option value="Pix">Pix</option>
+                        <option value="Cartão de Crédito">Cartão de Crédito</option>
+                        <option value="Boleto">Boleto</option>
+                    </select>
+                    <div id="detalhes-carrinho">
+                        <h3>Itens no Carrinho: </h3>
+                        <div id="lista-itens-carrinho">
+                            <div class="item-carrinho">
+                                <p>Cyberpunk 2077</p>
+                                <p>R$ 49,99</p>
+                                <img src="../img/jogo.png" alt="Capa do jogo Cyberpunk, apresentando o personagem principal no centro.">
+                            </div>
+                            <div class="item-carrinho">
+                                <p>Deus Ex</p>
+                                <p>R$ 49,99</p>
+                                <img src="../ProjST/ProjST/Game page/ProjST_Page-img/GodEX.jpg" alt="Imagem do jogo Deus Ex, mostrando o personagem principal no centro com construções ao fundo.">
+                            </div>
+                            <div class="item-carrinho">
+                                <p>God of War</p>
+                                <p>R$ 49,99</p>
+                                <img src="../img/godofwar.jpg" alt="Imagem do jogo God of War, mostrando o personagem principal em uma paisagem nórdica.">
+                            </div>
                         </div>
                     </div>
-                    <form id="form-pagamento" action="catal" method="post">
-                        <input type="checkbox" id="termos-condicoes" required>
-                        <label for="termos-condicoes">Li e concordo com os <a href="https://google.com">termos e condições</a></label>
-                        <button id="finalizar-pagamento" type="submit">Finalizar Compra</button>
+                    
+                    <input type="checkbox" id="termos-condicoes" required>
+                    <label for="termos-condicoes">Li e concordo com os <a href="https://google.com">termos e condições</a></label>
+                    <button id="finalizar-pagamento" type="submit">Finalizar Compra</button>
                     </form>
-                    <a href="html/carrinho.html" id="voltar-carrinho">Voltar ao Carrinho</a>
+                    <a href="../html/carrinho.html" id="voltar-carrinho">Voltar ao Carrinho</a>
                 </div>
         </main>
         <footer>
