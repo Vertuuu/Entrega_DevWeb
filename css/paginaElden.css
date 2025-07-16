@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1b2838;
+    color: #c7d5e0;
+  }
+
+  header {
+    background-color: #171a21;
+    padding: 20px;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .container {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .left-column {
+    width: 65%;
+    float: left;
+  }
+
+  .main-image {
+    width: 100%;
+    border: 2px solid #3c3f41;
+    border-radius: 10px;
+  }
+
+  .thumbnails {
+    margin-top: 10px;
+  }
+
+  .thumbnails img {
+    width: 100px;
+    height: 60px;
+    margin-right: 10px;
+    border: 2px solid #3c3f41;
+    vertical-align: top; /*alinha as imagens pequenas na vertical*/
+    cursor: pointer; 
+    border-radius: 5px;
+  }
+
+  .right-column {
+    width: 30%;
+    float: right;
+  }
+
+  .game-logo {
+    width: 100%;
+    margin-bottom: 15px;
+    border: 2px solid #3c3f41;
+  }
+
+  .description {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+
+  .details {
+    font-size: 13px;
+    margin-bottom: 10px;
+  }
+
+  .details a {
+    color: #66c0f4;
+    text-decoration: none; /*remove a decoração de link da tag a*/
+  }
+
+  .details-text {
+    color: #a4d007;
+  }
+
+  .tag {
+    display: inline-block;
+    background-color: #2a475e;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 12px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+  }
+  
+  .icon {
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+  }
