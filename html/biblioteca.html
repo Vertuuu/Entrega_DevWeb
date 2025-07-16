@@ -2,160 +2,106 @@
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
-    <title>Steam - Biblioteca</title>
-
-    <style>
-      /* espaço pra zerar a margem e nao ficar tudo torto */
-      body,
-      h1,
-      nav,
-      aside,
-      section {
-        margin: 0;
-        padding: 0;
-        font-family:'Arial','Times New Roman','Montserrat','Georgia';
-        background-color: #1E2328;
-      }
-
-      /* o inicio do cabeçalho */
-      header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: #141923;
-        padding: 10px;
-      }
-
-      header h1 {
-        font-size: 20px;
-        font-family:'Arial','Times New Roman','Montserrat','Georgia';
-        color:#e2e4e1;
-        background:#141923;
-      }
-
-      header nav button {
-        padding: 5px 10px;
-        margin-left: 10px;        
-        border:none;
-        border-radius:5px;
-        cursor:pointer;
-        display:inline-block;
-      }
-
-      /* inicio do layout principal */
-      main {
-        display: flex;
-        font-size: 15px;
-        font-family: 'Arial','Times New Roman','Montserrat','Georgia';
-        color: #e2e4e1;
-        margin-left: 250px;
-      }
-
-      /* barra lateral (abertura soloplayer e multiplayer) */
-      aside {
-        position: fixed;
-        top: 70px;
-        left: 0;
-        width: 250px;
-        height: 100%;
-        padding: 10px;
-        background-color: #1E2328;
-        overflow-y: auto; /* ISSO QUE FAZ A BARRA MEXER NAO REMOVE ISSO */
-        border-right: 1px solid #1E2328;
-        z-index: 1;
-      }
-
-      aside input[type="search"] {
-        width: 100%;
-        padding: 5px;
-      }
-
-      aside details {
-        margin: 10px 0;
-      }
-
-      aside a {
-        color: #e2e4e1;
-        text-decoration: none;
-        display: block;
-        margin:2px 0;
-      }
-
-      /* galeria de imagens*/
-      section {
-        flex: 1;
-        padding: 10px;
-      }
-
-      .galeria {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-      }
-
-      .galeria img {
-        width: 20%; /* 20% mantém até 4 img p/linha, 45% mantém 2 */
-        height: auto;
-        background-color: #1E2328;
-        margin: 10px;
-      }
-    </style>
+    <title>Library</title>
+    <link rel="stylesheet" href="../css/biblioteca.css" />
   </head>
+
   <body>
-    
-    <!-- Cabeçalho -->
     <header>
-      <img src="../ProjST/ProjST/Library/ProjST_Library-img/Logotipo.png" alt="Logotipo Steam" width="100"/>
+      <img src="ProjST_Library-img/Logotipo.png" alt="Logotipo da Steam" width="100"/>
       <nav>
-        <button onclick="location.href='wishlist.html'">Wishlist</button>
-        <button onclick="location.href='carrinho.html'">Carrinho</button>
+        <a href="wishlist.html">Wishlist</a>
+        <a href="carrinho.html">Carrinho</a>
+        <a href="loja.html">Loja</a>
       </nav>
     </header>
 
-    <!-- main c/ painel lateral e a galeria -->
     <main>
-      <aside>
-          <input type="search" placeholder="Buscar..." />
+      <article class="menu-lateral">
+        <input type="search" placeholder="Buscar..." />
 
-          <details open>
-            <summary>Singleplayer</summary>
-            <a href="#hollow-knight">Hollow Knight</a> <br>
-            <a href="#outer-wilds">Outer Wilds</a> <br>
-            <a href="#cyberpunk">Cyberpunk 2077</a> <br>
-            <a href="#disco">Disco Elysium</a> <br>
-            <a href="#rdr2">Red Dead Redemption 2</a> <br>
-            <a href="#bioshock">BioShock infinite</a> <br>
-            <hr>
-          </details>
+        <details open>
+          <summary>Singleplayer</summary>
+          <a href="#hollow-knight">Hollow Knight</a>
+          <a href="#outer-wilds">Outer Wilds</a>
+          <a href="#cyberpunk">Cyberpunk 2077</a>
+          <a href="#disco">Disco Elysium</a>
+          <a href="#rdr2">Red Dead Redemption 2</a>
+          <a href="#bioshock">BioShock Infinite</a>
+        </details>
 
-          <details>
-           <summary>Multiplayer</summary>
-           <a href="#stardew">Stardew Valley</a><br>
-           <a href="#overwatch">Overwatch</a><br>
-           <a href="#cs2">Counter Strike 2</a><br>
-           <a href="#helldivers">Helldivers 2</a><br>
-           <a href="#phasmophobia">Phasmophobia</a><br>
-           <a href="#repo">R.E.P.O</a><br>
-          </details>
+        <details>
+          <summary>Multiplayer</summary>
+          <a href="#stardew">Stardew Valley</a>
+          <a href="#overwatch">Overwatch</a>
+          <a href="#cs2">Counter Strike 2</a>
+          <a href="#helldivers">Helldivers 2</a>
+          <a href="#phasmophobia">Phasmophobia</a>
+          <a href="#repo">R.E.P.O</a>
+        </details>
+      </article>
+      
+      <section class="galeria">
+          <figure id="hollow-knight">
+            <img src="ProjST_Library-img/HK.jpg" alt="Cena do jogo Hollow Knight" />
+            <figcaption>Hollow Knight</figcaption>
+          </figure>
 
-      </aside>
+          <figure id="outer-wilds">
+            <img src="ProjST_Library-img/OWD.jpg" alt="Cena do jogo Outer Wilds" />
+            <figcaption>Outer Wilds</figcaption>
+          </figure>
 
-        <section>
-          <div class="galeria">
-          <img id="hollow-knight" src="../ProjST/ProjST/Library/ProjST_Library-img/HK.jpg" alt="Hollow Knight" /> <hr>
-          <img id="outer-wilds" src="../ProjST/ProjST/Library/ProjST_Library-img/OWD.jpg" alt="Outer Wilds" /> <hr>
-          <img id="cyberpunk" src="../ProjST/ProjST/Library/ProjST_Library-img/cpk77.jpg" alt="Cyberpunk 2077" /> <hr>
-          <img id="disco" src="../ProjST/ProjST/Library/ProjST_Library-img/DE.jpeg" alt="Disco Elysium" /> <hr>
-          <img id="rdr2" src="../ProjST/ProjST/Library/ProjST_Library-img/RDD2.jpeg" alt="Red Dead Redemption 2" /> <hr>
-          <img id="bioshock" src="../ProjST/ProjST/Library/ProjST_Library-img/BSH.jpg" alt="BioShock infinite" /> <hr>
-          <img id="stardew" src="../ProjST/ProjST/Library/ProjST_Library-img/SVL.png" alt="Stardew Valley" /> <hr>
-          <img id="overwatch" src="../ProjST/ProjST/Library/ProjST_Library-img/OW.jpeg" alt="Overwatch" /> <hr> 
-          <img id="cs2" src="../ProjST/ProjST/Library/ProjST_Library-img/CS2.jpeg" alt="Counter Strike 2" /> <hr>
-          <img id="helldivers" src="../ProjST/ProjST/Library/ProjST_Library-img/HD.jpg" alt="Helldivers 2" /> <hr>
-          <img id="phasmophobia" src="../ProjST/ProjST/Library/ProjST_Library-img/PMPH.jpeg" alt="Phasmophobia" /> <hr>
-          <img id="repo" src="../ProjST/ProjST/Library/ProjST_Library-img/REPO.jpeg" alt="R.E.P.O" /> <hr>
-          </div>
+          <figure id="cyberpunk">
+            <img src="ProjST_Library-img/cpk77.jpg" alt="Cena do jogo Cyberpunk 2077" />
+            <figcaption>Cyberpunk 2077</figcaption>
+          </figure>
+
+          <figure id="disco">
+            <img src="ProjST_Library-img/DE.jpeg" alt="Cena do jogo Disco Elysium" />
+            <figcaption>Disco Elysium</figcaption>
+          </figure>
+
+          <figure id="rdr2">
+            <img src="ProjST_Library-img/RDD2.jpeg" alt="Cena do jogo Red Dead Redemption 2" />
+            <figcaption>Red Dead Redemption 2</figcaption>
+          </figure>
+
+          <figure id="bioshock">
+            <img src="ProjST_Library-img/BSH.jpg" alt="Cena do jogo BioShock Infinite" />
+            <figcaption>BioShock Infinite</figcaption>
+          </figure>
+
+          <figure id="stardew">
+            <img src="ProjST_Library-img/SVL.png" alt="Cena do jogo Stardew Valley" />
+            <figcaption>Stardew Valley</figcaption>
+          </figure>
+
+          <figure id="overwatch">
+            <img src="ProjST_Library-img/OW.jpeg" alt="Cena do jogo Overwatch" />
+            <figcaption>Overwatch</figcaption>
+          </figure>
+
+          <figure id="cs2">
+            <img src="ProjST_Library-img/CS2.jpeg" alt="Cena do jogo Counter Strike 2" />
+            <figcaption>Counter Strike 2</figcaption>
+          </figure>
+
+          <figure id="helldivers">
+            <img src="ProjST_Library-img/HD.jpg" alt="Cena do jogo Helldivers 2" />
+            <figcaption>Helldivers 2</figcaption>
+          </figure>
+
+          <figure id="phasmophobia">
+            <img src="ProjST_Library-img/PMPH.jpeg" alt="Cena do jogo Phasmophobia" />
+            <figcaption>Phasmophobia</figcaption>
+          </figure>
+
+          <figure id="repo">
+            <img src="ProjST_Library-img/REPO.jpeg" alt="Cena do jogo R.E.P.O" />
+            <figcaption>R.E.P.O</figcaption>
+          </figure>
       </section>
     </main>
-  </body>
+</body>
 </html>
