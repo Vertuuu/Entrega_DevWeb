@@ -2,21 +2,34 @@ header, footer {
     background-color: #171a21;
     margin: 0px;
 }
-/* Não sei como alterar a apresentação do header para ficar com os dois elementos nas extremidades sem uso do display flex*/
 header {
-    color: #fff;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+    position: relative;
+    padding-left: 160px;
+    padding-right: 160px; 
+    height: 80px;
 }
-.header-icon {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    display: inline;
+
+#header-imagem {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
 }
 .user-info h2 {
     display: inline;
+    margin-left: 10px;
+    font-size: 24px;
+    color: #fff;
+}
+.user-info img {
+    width: 60px;
+}
+.user-info {
+    padding: 2%;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
 }
 footer {
     width: 100%;
@@ -25,9 +38,6 @@ footer {
     padding: 20px;
     padding-left: 0px;
     padding-right: 0px;
-}
-.user-info {
-    width: 200px;
 }
 body {
     color: #fff;
