@@ -1,5 +1,8 @@
 
 body {
+    background-image: url('https://store.fastly.steamstatic.com/public/shared/images/responsive/steam_share_image.jpg');
+    background-size: cover;
+    background-position: center;
     background-color: #171a21; 
     font-family: Arial, sans-serif;
     color: #c7d5e0; 
@@ -46,6 +49,7 @@ input[type="password"] {
     color: #ffffff;
     font-size: 14px;
     border-radius: 3px;
+    margin-top: 10px;
 }
 
 input::placeholder {

@@ -52,3 +52,10 @@ p {
 .info a:hover {
     text-decoration: underline;
 }
+video {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 1px solid #2a475e;
+}

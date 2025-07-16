@@ -14,13 +14,21 @@ body {
 }
 
 .breadcrumb {
-    color: #c7d5e0; 
+    color: #e8eff4; 
     font-size: 14px;
     margin-bottom: 8px;
 }
 
 .breadcrumb-active {
     color: #66c0f4; 
+}
+a {
+    color: #c7d5e0; 
+    text-decoration: none;
+}
+a:hover {
+    color: #66c0f4; 
+    
 }
 
 h1 {
@@ -99,4 +107,20 @@ h1 {
     background: #2a475e; 
     color: #c7d5e0; 
     margin-left: 12px;
+}
+.cart-list img {
+    width: 60px;
+    height: auto;
+    max-height: 60px;
+    object-fit: contain;
+    vertical-align: middle;
+    margin-right: 12px;
+    margin-top: 10px;
+}
+.btn-secondary {
+    background: #2a475e; 
+    color: #c7d5e0; 
+    margin-left: 12px;
+    border-radius: 3px;
+    padding: 8px 8px;
 }
