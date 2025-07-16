@@ -1,0 +1,93 @@
+body {
+    background-color: #1E2328;
+    color: #e2e4e1;
+    font-family: 'Arial', 'Times New Roman', 'Montserrat', 'Georgia';
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #141923;
+    padding: 20px;
+    display: table;
+    width: 100%;
+}
+
+header .user-info {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+header .user-info img {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+header nav {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+}
+
+nav a {
+    padding: 5px 20px;
+    background-color: #e2e4e1;
+    color: #1E2328;
+    text-decoration: none;
+    margin-left: 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.search-bar {
+    padding: 10px;
+    border-bottom: 1px solid #555;
+    display: table;
+    width: 100%;
+}
+
+.search-bar input,
+.search-bar select {
+    padding: 5px;
+    border-radius: 3px;
+    border: none;
+    margin-right: 10px;
+}
+
+.game-item {
+    display: table;
+    width: 100%;
+    border-bottom: 1px solid #555;
+    padding: 20px;
+}
+
+.game-item figure {
+    display: table-cell;
+    width: 160px;
+    margin: 0;
+}
+
+.game-item figure img {
+    width: 150px;
+    height: 145px;
+    background-color: #777;
+}
+
+.game-details {
+    display: table-cell;
+    padding: 0 20px;
+    vertical-align: top;
+    width: 60%;
+}
+
+.game-details h3 {
+    margin: 0;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #555;
+}
+
+.actions {
+    display: table-cell;
+    vertical-align: top;
