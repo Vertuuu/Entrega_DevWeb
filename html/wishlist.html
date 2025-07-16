@@ -1,94 +1,13 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <title>Steam - Wishlist</title>
-    <style>
-    body {
-        background-color: #1E2328;
-        color: #e2e4e1;
-        font-family: 'Arial', 'Times New Roman', 'Montserrat', 'Georgia';
-        margin: 0;
-        padding: 0;
-    }
-    header {
-        background-color: #141923;
-        padding: 20px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    header .user-info {
-        display: flex;
-        align-items: center;
-    }
-    header .user-info img {
-        width: 60px;
-        height: 60px;
-        margin-right: 10px;
-    }
-    nav a {
-        padding: 5px 20px;
-        background-color: #e2e4e1;
-        color:#1E2328;
-        text-decoration: none;
-        margin-left: 10px;
-        border-radius: 5px;
-    }
-    .search-bar {
-        padding: 10px;
-        border-bottom: 1px solid #555;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-    .search-bar input, .search-bar select {
-        padding: 5px;
-        border-radius: 3px;
-        border: none;
-    }
-    .game-item {
-        display: flex;
-        align-items: flex-start;
-        padding: 20px;
-        border-bottom: 1px solid #555;
-    }
-    .game-item img {
-        width: 150px;
-        height: 145px;
-        margin-right: 20px;
-        background-color: #777;
-    }
-    .game-item .game-details {
-        flex: 1;
-    }
-    .game-item .game-details h3 {
-        border-bottom: 1px solid #555;
-        padding-bottom: 5px;
-    }
-    .game-item .actions {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .actions button {
-        padding: 8px 15px;
-        background-color: #e2e4e1;
-        color: #1E2328;
-        border-radius: 5px;
-        border: none;
-        margin-bottom: 5px;
-    }
-    .actions span {
-        font-size: 14px;
-        color: #e2e4e1;
-    }
-    </style>
-    </head>
-    <body>
+<!DOCTYPE html><html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Steam - Wishlist</title>
+    <link rel="stylesheet" href="wishlist.css">
+</head>
+<body>
     <header>
         <div class="user-info">
-            <img src="../ProjST/ProjST/Wishlist/ProjST_Wishlist-img/icon.jpeg" alt="User Avatar">
+            <img src="../ProjST/ProjST/Wishlist/ProjST_Wishlist-img/icon.jpeg" alt="Avatar do usuário">
             <div>
                 <div>Hael má fase</div>
                 <div>Jogos na wishlist: 5</div>
@@ -99,69 +18,44 @@
             <a href="biblioteca.html">Biblioteca</a>
             <a href="#">Loja</a>
         </nav>
-    </header>
-    <div class="search-bar">
-        <input type="text" placeholder="Pesquisar jogos...">
-        <select>
-            <option>Todos</option>
-            <option>Favoritos</option>
-            <option>Recentes</option>
-        </select>
+    </header><div class="search-bar">
+    <input type="text" placeholder="Pesquisar jogos...">
+    <select>
+        <option>Todos</option>
+        <option>Favoritos</option>
+        <option>Recentes</option>
+    </select>
+</div>
+
+<section class="game-item">
+    <figure>
+        <img src="../ProjST/ProjST/Wishlist/ProjST_Wishlist-img/elden-ring.jpeg" alt="Capa do jogo Elden Ring">
+    </figure>
+    <div class="game-details">
+        <h3>Elden Ring</h3>
+        <p>Levante-se, Maculado, e seja guiado pela graça para portar o poder do Anel Prístino e se tornar um Lorde Prístino nas Terras Intermédias.</p>
     </div>
-    <div class="game-item">
-        <img src="../ProjST/ProjST/Wishlist/ProjST_Wishlist-img/elden-ring.jpeg" alt="Elden Ring">
-        <div class="game-details">
-            <h3>Elden Ring</h3>
-            <p> Levante-se, Maculado, e seja guiado pela graça para portar o poder do Anel Prístino e se tornar um Lorde Prístino nas Terras Intermédias. </p>
-        </div>
-        <div class="actions">
-            <button onclick="location.href='carrinho.html'">Adicionar ao carrinho</button>
-                <span>R$ 272,62</span>
-        </div>
+    <div class="actions">
+        <a class="buy-link" href="carrinho.html">Adicionar ao carrinho</a>
+        <span>R$ 272,62</span>
     </div>
-    <div class="game-item">
-        <img src="../ProjST/ProjST/Wishlist/ProjST_Wishlist-img/wukong.jpg" alt="Black Myth Wukong">
-        <div class="game-details">
-            <h3>Black Myth Wukong</h3>
-            <p>Você assume o papel do Predestinado e tem a responsabilidade de encarar os desafios e as maravilhas do mundo para desvendar a verdade obscura por trás de uma lenda gloriosa do passado.</p>
-        </div>
-        <div class="actions">
-            <button onclick="location.href='carrinho.html'">Adicionar ao carrinho</button>
-            <span>R$ 239,49</span>
-        </div>
+</section>
+
+<section class="game-item">
+    <figure>
+        <img src="../ProjST/ProjST/Wishlist/ProjST_Wishlist-img/wukong.jpg" alt="Capa do jogo Black Myth Wukong">
+    </figure>
+    <div class="game-details">
+        <h3>Black Myth Wukong</h3>
+        <p>Você assume o papel do Predestinado para desvendar a verdade obscura por trás de uma lenda gloriosa do passado.</p>
     </div>
-    <div class="game-item">
-        <img src="../ProjST/ProjST/Wishlist/ProjST_Wishlist-img/re-village.jpeg" alt="Resident Evil Village">
-        <div class="game-details">
-            <h3>Resident Evil Village</h3>
-            <p>Vivencie o horror de sobrevivência como nunca na 8ª sequência parte da franquia Resident Evil - Resident Evil Village. Com gráficos detalhados, ação intensa em primeira pessoa e uma narrativa primorosa, o terror nunca foi tão realista.</p>
-        </div>
-        <div class="actions">
-            <button onclick="location.href='carrinho.html'">Adicionar ao carrinho</button>
-            <span>R$ 135,00</span>
-        </div>
+    <div class="actions">
+        <a class="buy-link" href="carrinho.html">Adicionar ao carrinho</a>
+        <span>R$ 239,49</span>
     </div>
-    <div class="game-item">
-        <img src="../ProjST/ProjST/Wishlist/ProjST_Wishlist-img/hades.jpeg" alt="Hades">
-        <div class="game-details">
-            <h3>Hades</h3>
-            <p>Desafie o deus dos mortos enquanto você batalha para sair do Submundo neste jogo roguelike dos mesmos criadores de Bastion, Transistor e Pyre.</p>
-        </div>
-        <div class="actions">
-            <button onclick="location.href='carrinho.html'">Adicionar ao carrinho</button>
-            <span>R$ 124,90</span>
-        </div>
-    </div>
-    <div class="game-item">
-        <img src="../ProjST/ProjST/Wishlist/ProjST_Wishlist-img/dbh.jpeg" alt="Detroit Become Human">
-        <div class="game-details">
-            <h3>Detroit Become Human</h3>
-            <p>Detroit: Become Human coloca o destino da humanidade e dos androides em suas mãos. Todas as suas escolhas afetam o resultado do jogo, com uma das narrativas mais intrinsecamente ramificadas já criadas.</p>
-        </div>
-        <div class="actions">
-            <button onclick="location.href='carrinho.html'">Adicionar ao carrinho</button>
-            <span>R$ 72,50</span>
-        </div>
-    </div>
-    </body>
+</section>
+
+<!-- Adicione os outros jogos seguindo o mesmo padrão acima -->
+
+</body>
 </html>
