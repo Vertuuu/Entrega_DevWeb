@@ -2,173 +2,73 @@
     <html lang="pt-br">
     <head>
         <meta charset="UTF-8" />
-        <title>Steam - Página do Jogo</title>
+        <title>Game Page</title>
+        <link rel="stylesheet" href="jogo.css" />
+  </head>
+  <body>
+    <header>
+      <img src="ProjST_Page-img/Logotipo.png" alt="Logotipo da Steam"/>
+      <nav>
+        <a class="nav-btn" href="biblioteca.html">Biblioteca</a>
+        <a class="nav-btn" href="carrinho.html">Carrinho</a>
+        <a class="nav-btn" href="wishlist.html">Wishlist</a>
+        <a class="nav-btn" href="loja.html">Loja</a>
+      </nav>
+    </header>
 
-    <style>
-        body {
-        margin: 0;
-        font-family: 'Arial','Times New Roman','Montserrat','Georgia';
-        background-color: #1E2328;
-        color: #e2e4e1;
-        }
+    <section class="main-container">
+      <section class="main-image">
+        <figure>
+          <img src="ProjST_Page-img/Gif.gif" alt="Animação principal do jogo Cyberpunk 2077" />
+        </figure>
+      </section>
 
-        header {
-        display: flex;
-        justify-content: space-between;
-        align-items:auto;
-        background-color: #141923;
-        padding: 10px;
-        }
+      <section class="info-panel">
+        <figure>
+          <img src="ProjST_Page-img/CPK77.png" alt="Logo Cyberpunk 2077" />
+        </figure>
+        <h2>Cyberpunk 2077</h2>
+        <p>
+          Crie seu destino, enfrente corporações, hackers, cyberpsicoses em carne e cromo e se torne uma lenda enquanto tenta sobreviver nas ruas perigosas da encantadora night city! Esse foi o seu mano Stan, agora juntem-se a mim pra mais um dia na cidade dos sonhos.
+        </p>
+      </section>
+    </section>
 
-        header nav button {
-        margin-left: 10px;
-        padding: 5px 10px;
-        background-color: #e2e4e1;
-        color:#1E2328;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        }
+    <section class="gallery">
+      <figure><img src="ProjST_Page-img/C1.jpeg" alt="Cena de combate urbano em Cyberpunk 2077" /></figure>
+      <figure><img src="ProjST_Page-img/C2.jpeg" alt="Veículo futurista em Cyberpunk 2077" /></figure>
+      <figure><img src="ProjST_Page-img/C3.jpeg" alt="Vista noturna da cidade Cyberpunk 2077" /></figure>
+      <figure><img src="ProjST_Page-img/C4.jpeg" alt="Personagem em ação em Cyberpunk 2077" /></figure>
+    </section>
 
-        .main-container {
-        display: flex;
-        padding: 20px;
-        }
+    <hr />
 
-        .main-image {
-        flex:2;
-        margin-right: 20px;
-        }
+    <section class="related-games">
+      <section class="related-game">
+        <figure>
+          <img src="ProjST_Page-img/Ghostrunner.jpg" alt="Capa do jogo Ghostrunner" />
+        </figure>
+        <h3>Ghostrunning</h3>
+        <p>Ghostrunner é um jogo de ação em primeira pessoa ambientado em um mundo cyberpunk pós-apocalíptico...</p>
+        <a class="buy-link" href="carrinho.html">ADICIONAR AO CARRINHO</a>
+      </section>
 
-        .main-image img {
-        width: 90%;
-        height: auto;
-        border-radius: 8px;
-        margin-left: 10px;
-        }
+      <section class="related-game">
+        <figure>
+          <img src="ProjST_Page-img/GodEX.jpg" alt="Capa do jogo Deus Ex" />
+        </figure>
+        <h3>Deus Ex</h3>
+        <p>Desenvolvido pela Ion Storm, ambientado em um futuro distópico onde JC Denton investiga uma conspiração global...</p>
+        <a class="buy-link" href="carrinho.html">ADICIONAR AO CARRINHO</a>
+      </section>
 
-        .info-panel {
-        flex: 1;
-        }
-
-        .info-panel img {
-        width: 100%;
-        height: auto;
-        border-radius: 8px;
-        margin-bottom: 10px;
-        }
-
-        .gallery {
-        display: flex;
-        justify-content: space-around;
-        margin: 20px;
-        flex-wrap: wrap;
-        }
-
-        .gallery img {
-        width: 400px;
-        height: auto;
-        margin: 10px;
-        border-radius: 5px;
-        }
-
-        hr {
-        border: 1px solid #1E2328;
-        margin: 40px 0 20px 0;
-        }
-
-        .related-games {
-        display: flex;
-        justify-content: space-around;
-        padding: 0 20px 40px;
-        }
-
-        .related-game {
-        width: 30%;
-        background-color: #2a2f35;
-        padding: 15px;
-        border-radius: 10px;
-        }
-
-        .related-game img {
-        width: 100%;
-        border-radius: 5px;
-        }
-
-        .related-game h3 {
-        margin: 10px 0;
-        }
-
-        .related-game p {
-        font-size: 14px;
-        margin-bottom: 10px;
-        }
-
-        .related-game button {
-        padding: 8px 12px;
-        background-color: #e2e4e1;
-        color: #1E2328;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        }
-    </style>
-    </head>
-
-    <body>
-        <header>
-            <img src="../ProjST/ProjST/Game page/ProjST_Page-img/Logotipo.png" alt="Logo" width="100">
-            <nav>
-            <button onclick="location.href='biblioteca.html'">Biblioteca</button>
-            <button onclick="location.href='carrinho.html'">Carrinho</button>
-            <button onclick="location.href='wishlist.html'">Wishlist</button>
-            </nav>
-        </header>
-
-        <div class="main-container">
-            <div class="main-image">
-            <img src="../ProjST/ProjST/Game page/ProjST_Page-img/Gif.gif" alt="Imagem principal Cyberpunk 2077">
-            </div>
-
-            <div class="info-panel">
-            <img src="../ProjST/ProjST/Game page/ProjST_Page-img/CPK77.png" alt="Logotipo CPK">
-            <h2>Cyberpunk 2077</h2>
-            <p> Crie seu destino, enfrente corporações, hackers, cyberpsicoses em carne e cromo e se torne uma lenda enquanto tenta sobreviver nas ruas perigosas da encantadora night city! Esse foi o seu mano Stan, agora juntem-se a mim pra mais um dia na cidade dos sonhos.</p>
-            </div>
-        </div>
-
-        <div class="gallery">
-            <img src="../ProjST/ProjST/Game page/ProjST_Page-img/C1.jpeg" alt="Cena1">
-            <img src="../ProjST/ProjST/Game page/ProjST_Page-img/C2.jpeg" alt="Cena2">
-            <img src="../ProjST/ProjST/Game page/ProjST_Page-img/C3.jpeg" alt="Cena3">
-            <img src="../ProjST/ProjST/Game page/ProjST_Page-img/C4.jpeg" alt="Cena4">
-        </div>
-
-        <hr>
-
-        <div class="related-games">
-
-            <div class="related-game">
-            <img src="../ProjST/ProjST/Game page/ProjST_Page-img/Ghostrunner.jpg" alt="Ghostrunning">
-            <h3>Ghostrunning</h3>
-            <p>Ghostrunner é um jogo de ação em primeira pessoa ambientado em um mundo cyberpunk pós-apocalíptico, onde os jogadores assumem o papel de um guerreiro cibernético que deve escalar a Torre Dharma, o último refúgio da humanidade, para confrontar o tirano Keymaster.</p>
-            <button onclick="location.href='carrinho.html'">ADICIONAR AO CARRINHO</button>
-            </div>
-            
-            <div class="related-game">
-            <img src="../ProjST/ProjST/Game page/ProjST_Page-img/GodEX.jpg" alt="Deus Ex">
-            <h3>Deus Ex</h3>
-            <p>Desenvolvido pela Ion Storm e publicado pela Eidos Interactive em um cenário de futuro distópico cyberpunk, onde o protagonista JC Denton, um agente secreto com melhorias cibernéticas, deve investigar uma conspiração global que ameaça a ordem mundial. </p>
-            <button onclick="location.href='carrinho.html'">ADICIONAR AO CARRINHO</button>
-            </div>
-            
-            <div class="related-game">
-            <img src="../ProjST/ProjST/Game page/ProjST_Page-img/CitSleeper.jpg" alt="R.E.P.O">
-            <h3>Citizen Sleeper</h3>
-            <p>Você é um Sleeper, um androide pertencente a uma empresa que se escondeu no Starward Belt, nos limites do Helion System. Após uma tentativa desesperada de reescrever o código que controla seu sistema e se libertar da servidão, você fugiu com um corpo defeituoso, uma cabeça a prêmio e nenhuma memória do seu passado.</p>
-            <button onclick="location.href='carrinho.html'">ADICIONAR AO CARRINHO</button>
-            
-            </div>
-        </div>
-    </body>
-</html>
+      <section class="related-game">
+        <figure>
+          <img src="ProjST_Page-img/CitSleeper.jpg" alt="Capa do jogo Citizen Sleeper" />
+        </figure>
+        <h3>Citizen Sleeper</h3>
+        <p>Você é um Sleeper, um androide fugitivo com o corpo defeituoso e a cabeça a prêmio que busca liberdade nas fronteiras do espaço...</p>
+        <a class="buy-link" href="carrinho.html">ADICIONAR AO CARRINHO</a>
+      </section>
+    </section>
+  </body>
