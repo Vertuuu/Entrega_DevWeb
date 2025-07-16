@@ -6,29 +6,37 @@ body, h1, nav, article, section {
   color: #e2e4e1;
 }
 
-/* inicio do cabeçalho */
 header {
   background-color: #141923;
+  height: 80px;
   padding: 10px;
+  position: relative;
 }
 
-header img {
-  display: block;
-  margin-bottom: 5px;
-}
-
-nav {
-  margin-top: 10px;
-}
-
-nav a {
+/* Logo Steam */
+.logo-steam img {
+  max-width: 120px;
+  height: auto;
   display: inline-block;
-  padding: 5px 10px;
-  margin-right: 10px;
+}
+
+/* Botões alinhados à direita */
+.menu-botoes {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+
+.menu-botoes a {
+  text-decoration: none;
+  padding: 6px 12px;
+  margin-left: 10px;
   background-color: #e2e4e1;
   color: #1E2328;
-  text-decoration: none;
   border-radius: 5px;
+  font-weight:lighter;
+  display: inline-block;
 }
 
 /* config do layout principal */
@@ -72,7 +80,7 @@ main {
 
 .galeria figure {
   display: inline-block;
-  width: 200px;
+  width: 250px;
   margin: 15px;
   text-align: center;
 }

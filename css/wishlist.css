@@ -1,7 +1,7 @@
 body {
     background-color: #1E2328;
     color: #e2e4e1;
-    font-family: 'Arial', 'Times New Roman', 'Montserrat', 'Georgia';
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -13,12 +13,12 @@ header {
     width: 100%;
 }
 
-header .user-info {
+.user-info {
     display: table-cell;
     vertical-align: middle;
 }
 
-header .user-info img {
+.user-info img {
     width: 60px;
     height: 60px;
     margin-right: 10px;
@@ -38,7 +38,6 @@ nav a {
     text-decoration: none;
     margin-left: 10px;
     border-radius: 5px;
-    display: inline-block;
 }
 
 .search-bar {
@@ -60,13 +59,15 @@ nav a {
     display: table;
     width: 100%;
     border-bottom: 1px solid #555;
-    padding: 20px;
+    padding: 15px;
+    table-layout: fixed;
 }
 
 .game-item figure {
     display: table-cell;
     width: 160px;
     margin: 0;
+    vertical-align: top;
 }
 
 .game-item figure img {
@@ -77,15 +78,20 @@ nav a {
 
 .game-details {
     display: table-cell;
-    padding: 0 20px;
+    padding-left: 10px;
     vertical-align: top;
     width: 60%;
 }
 
 .game-details h3 {
     margin: 0;
-    padding-bottom: 5px;
-    border-bottom: 1px solid #555;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.game-details p {
+    margin: 0;
+    font-size: 14px;
 }
 
 .actions {
@@ -103,4 +109,10 @@ nav a {
     border-radius: 5px;
     text-decoration: none;
     margin-bottom: 5px;
+}
+
+.actions span {
+    display: block;
+    margin-top: 5px;
+    font-size: 14px;
 }

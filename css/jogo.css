@@ -1,105 +1,105 @@
 body {
-  margin: 0;
-  font-family: 'Arial', 'Times New Roman', 'Montserrat', 'Georgia';
   background-color: #1E2328;
   color: #e2e4e1;
+  font-family: 'Arial', 'Times New Roman', 'Montserrat', 'Georgia';
+  margin: 0;
+  padding: 0;
 }
 
 header {
   background-color: #141923;
   padding: 10px;
+  overflow: hidden;
 }
 
-nav {
-  margin-top: 10px;
-  text-align: right;
+.logo-steam img {
+  max-width: 120px;
+  height: auto;
+  float: left;
 }
 
-.nav-btn {
-  display: inline-block;
-  margin-left: 10px;
-  padding: 5px 10px;
+.nav-links {
+  float: right;
+}
+
+.nav-links a {
   background-color: #e2e4e1;
   color: #1E2328;
   text-decoration: none;
+  padding: 6px 12px;
   border-radius: 5px;
+  margin-left: 10px;
+  display: inline-block;
 }
 
-.main-container {
+.main-content {
+  overflow: hidden;
   padding: 20px;
 }
 
-.main-image,
-.info-panel {
-  margin-bottom: 20px;
+.image-principal {
+  float: left;
+  width: 60%;
 }
 
-.main-image img,
-.info-panel img {
+.image-principal img {
   width: 90%;
-  height: auto;
   border-radius: 8px;
-  display: block;
-  margin: 0 auto 10px;
 }
 
-.gallery {
-  padding: 20px;
+.descricao-jogo {
+  float: right;
+  width: 35%;
+}
+
+.logo-cyberpunk img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.galeria {
   text-align: center;
+  padding: 20px;
 }
 
-.gallery figure {
+.galeria figure {
   display: inline-block;
   margin: 10px;
 }
 
-.gallery img {
-  width: 350px;
-  height: auto;
+.galeria img {
+  width: 300px;
   border-radius: 5px;
 }
 
-hr {
-  border: 1px solid #333;
-  margin: 40px 0 20px;
-}
-
-.related-games {
-  padding: 0 20px 40px;
+.sugestoes {
+  padding: 20px;
   text-align: center;
 }
 
-.related-game {
+.jogo-sugerido {
   display: inline-block;
-  vertical-align: top;
-  width: 30%;
-  margin: 1%;
+  width: 28%;
   background-color: #2a2f35;
+  margin: 1%;
   padding: 15px;
   border-radius: 10px;
-  box-sizing: border-box;
+  vertical-align: top;
 }
 
-.related-game img {
+.jogo-sugerido img {
   width: 100%;
   border-radius: 5px;
 }
 
-.related-game h3 {
-  margin: 10px 0;
-}
-
-.related-game p {
-  font-size: 14px;
-  margin-bottom: 10px;
-}
-
-.buy-link {
+.botao {
   display: inline-block;
-  padding: 8px 12px;
+  padding: 8px 15px;
   background-color: #e2e4e1;
   color: #1E2328;
   text-decoration: none;
   border-radius: 5px;
-  font-weight: bold;
+  margin-top: 10px;
 }
